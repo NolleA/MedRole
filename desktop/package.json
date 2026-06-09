@@ -1,0 +1,29 @@
+{
+  "name": "medrole",
+  "version": "1.0.0",
+  "description": "MedRole - AI 标准化病人训练平台",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --mac",
+    "dev": "MEDROLE_URL=http://localhost:5174 electron ."
+  },
+  "build": {
+    "appId": "com.medrole.app",
+    "productName": "MedRole",
+    "mac": {
+      "category": "public.app-category.education",
+      "icon": "icon.png",
+      "target": ["dmg", "zip"]
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "icon.png"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}
