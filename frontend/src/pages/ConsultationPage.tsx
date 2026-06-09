@@ -12,7 +12,7 @@ export default function ConsultationPage() {
   const navigate = useNavigate()
   const {
     messages, isLoading, currentSessionId, sessionStatus,
-    startSession, sendMessage, endSession, loadSession, resetSession,
+    startSession, sendMessage, endSession, loadSession,
   } = useSessionStore()
 
   const [caseInfo, setCaseInfo] = useState<CaseDetail | null>(null)

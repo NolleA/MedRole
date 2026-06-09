@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { api } from '../api/client'
-import type { Message, Session, Evaluation } from '../types'
+import type { Message, Session } from '../types'
 
 interface SessionState {
   currentSessionId: string | null
