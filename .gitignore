@@ -1,0 +1,13 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.env
+backend/data/medrole.db
+.claude/
+._*
+.DS_Store
+*.pyo
+backend/.vite/
+venv/
+.venv/
